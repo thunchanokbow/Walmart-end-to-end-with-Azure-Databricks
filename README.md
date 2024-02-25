@@ -9,12 +9,12 @@ This project integrates data from websites using Azure Data Factory. The data is
 - [Azure Data Lake Storage Gen2](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
 
 [Create Azure Data Factory](sections/01-cloud-sql-for-mysql-database.md).<br>
-[Create Linked Services](sections/01-cloud-sql-for-mysql-database.md).<br>
-- [Source Linked Services](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
-- [Sink Linked Services](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
+- [Create Linked Services](sections/01-cloud-sql-for-mysql-database.md).<br>
+  - [Source Linked Services](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
+  - [Sink Linked Services](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
 
-[Create Dataset](sections/01-cloud-sql-for-mysql-database.md).<br>
-- [Dataset of Azure Blob Storage](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
-- [Dataset of Azure Data Lake Storage Gen2](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
+- [Create Dataset](sections/01-cloud-sql-for-mysql-database.md).<br>
+  - [Dataset of Azure Blob Storage](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
+  - [Dataset of Azure Data Lake Storage Gen2](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br>
 
-[Create Pipelines Using Azure Data Factory](sections/01-cloud-sql-for-mysql-database.md).<br>
+- [Building Pipelines Using Azure Data Factory](sections/01-cloud-sql-for-mysql-database.md).<br>
