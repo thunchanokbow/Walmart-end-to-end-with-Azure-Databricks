@@ -25,5 +25,9 @@ This project integrates data from websites using Azure Data Factory. The data is
 
 
 [Building Pipelines Using Azure Data Factory](sections/01-storage-accounts.md).<br>
-[Load data into Azure Synapse Analytics](sections/01-storage-accounts.md).<br>
+[Create Synapse Analytics workspace](sections/01-storage-accounts.md).<br>
+- [Create Lake database](sections/01-storage-accounts.md).<br>
+- [Create Table from data lake](sections/01-storage-accounts.md).<br>
+- [Load data into Azure Synapse Analytics](sections/01-storage-accounts.md).<br>
+
 [Import Azure Synapse Data into the Power BI](sections/01-storage-accounts.md).<br>
