@@ -21,6 +21,8 @@ This project integrates data from websites using Azure Data Factory. The data is
 [Create Azure Databricks Services](sections/01-storage-accounts.md).<br>
 - [Create Cluster](sections/01-storage-accounts.md).<br>
 - [Mounting Data Lake Storage](sections/01-storage-accounts.md).<br>
+- [Using Databricks to transform data](sections/01-storage-accounts.md).<br>
+
 
 [Building Pipelines Using Azure Data Factory](sections/01-storage-accounts.md).<br>
 [Load data into Azure Synapse Analytics](sections/01-storage-accounts.md).<br>
