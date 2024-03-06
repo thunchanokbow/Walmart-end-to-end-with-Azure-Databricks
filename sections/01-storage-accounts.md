@@ -4,7 +4,7 @@ Imagine a data lake as a giant digital storage container. It can hold all sorts 
 - [Create Azure Blob Storage](01-storage-accounts.md#).<br>
 - [Create Azure Data Lake Storage Gen2](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2).<br>
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - Create Account Azure subscription
 
 ![0](/images/1.png)
