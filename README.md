@@ -17,6 +17,7 @@ This project integrates data from websites using Azure Data Factory. The data is
 - [Create Dataset](sections/01-storage-accounts.md).<br>
   - [Dataset of Azure Blob Storage](sections/01-storage-accounts.md).<br>
   - [Dataset of Azure Data Lake Storage Gen2](sections/01-storage-accounts.md).<br>
+- [Extract data using Azure Data Factory](sections/01-storage-accounts.md).<br>
 
 [Create Azure Databricks Services](sections/01-storage-accounts.md).<br>
 - [Create Cluster](sections/01-storage-accounts.md).<br>
@@ -30,4 +31,6 @@ This project integrates data from websites using Azure Data Factory. The data is
 - [Create Table from data lake](sections/01-storage-accounts.md).<br>
 - [Load data into Azure Synapse Analytics](sections/01-storage-accounts.md).<br>
 
-[Import Azure Synapse Data into the Power BI](sections/01-storage-accounts.md).<br>
+[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/01-storage-accounts.md).<br>
+- [Connect to a data source in Power BI](sections/01-storage-accounts.md).<br>
+- [Creating Data visualizations](sections/01-storage-accounts.md).<br>
