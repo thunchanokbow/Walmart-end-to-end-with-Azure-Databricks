@@ -9,28 +9,28 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 - [Azure Data Lake Storage Gen2](sections/01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2).<br>
 
 [Create Azure Data Factory](sections/02-azure-data-factory.md).<br>
-- [Create Linked Services](sections/02-azure-data-factory.md).<br>
-  - [Source Linked Services](sections/02-azure-data-factory.md).<br>
-  - [Sink Linked Services](sections/02-azure-data-factory.md).<br>
-  - [Databricks Linked Services](sections/02-azure-data-factory.md).<br>
+- [Create Linked Services](sections/02-azure-data-factory.md#Create-Linked-Services).<br>
+  - [Source Linked Services](sections/02-azure-data-factory.md#Source-Linked-Services).<br>
+  - [Sink Linked Services](sections/02-azure-data-factory.md#Sink-Linked-Services).<br>
+  - [Databricks Linked Services](sections/02-azure-data-factory.md#Databricks-Linked-Services).<br> 
 
-- [Create Dataset](sections/02-azure-data-factory.md).<br>
-  - [Dataset of Azure Blob Storage](sections/02-azure-data-factory.md).<br>
-  - [Dataset of Azure Data Lake Storage Gen2](sections/02-azure-data-factory.md).<br>
-- [Extract data using Azure Data Factory](sections/02-azure-data-factory.md).<br>
+- [Create Dataset](sections/03-azure-databricks.md).<br>
+  - [Dataset of Azure Blob Storage](sections/03-azure-databricks.md).<br>
+  - [Dataset of Azure Data Lake Storage Gen2](sections/03-azure-databricks.md).<br>
+- [Extract data using Azure Data Factory](sections/03-azure-databricks.md).<br>
 
-[Create Azure Databricks Services](sections/02-azure-data-factory.md).<br>
-- [Create Cluster](sections/02-azure-data-factory.md).<br>
-- [Mounting Data Lake Storage](sections/02-azure-data-factory.md).<br>
-- [Using Databricks to transform data](sections/02-azure-data-factory.md).<br>
+[Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
+- [Create Cluster](sections/03-azure-databricks.md).<br>
+- [Mounting Data Lake Storage](sections/03-azure-databricks.md).<br>
+- [Using Databricks to transform data](sections/03-azure-databricks.md).<br>
 
 
-[Building Pipelines Using Azure Data Factory](sections/02-azure-data-factory.md).<br>
-[Create Synapse Analytics workspace](sections/02-azure-data-factory.md).<br>
-- [Create Lake database](sections/02-azure-data-factory.md).<br>
-- [Create Table from data lake](sections/02-azure-data-factory.md).<br>
-- [Load data into Azure Synapse Analytics](sections/02-azure-data-factory.md).<br>
+[Building Pipelines Using Azure Data Factory](sections/03-azure-databricks.md).<br>
+[Create Synapse Analytics workspace](sections/03-azure-databricks.md).<br>
+- [Create Lake database](sections/03-azure-databricks.md).<br>
+- [Create Table from data lake](sections/03-azure-databricks.md).<br>
+- [Load data into Azure Synapse Analytics](sections/03-azure-databricks.md).<br>
 
-[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/02-azure-data-factory.md).<br>
-- [Connect to a data source in Power BI](sections/02-azure-data-factory.md).<br>
-- [Creating Data visualizations](sections/02-azure-data-factory.md).<br>
+[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/03-azure-databricks.md).<br>
+- [Connect to a data source in Power BI](sections/03-azure-databricks.md).<br>
+- [Creating Data visualizations](sections/03-azure-databricks.md).<br>
