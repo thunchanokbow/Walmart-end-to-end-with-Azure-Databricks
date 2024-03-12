@@ -6,9 +6,9 @@ Think of Azure Data Factory as a moving service for your data. It can efficientl
     - [Source Linked Services](02-azure-data-factory.md#Source-Linked-Services).<br>
     - [Sink Linked Services](02-azure-data-factory.md#Sink-Linked-Services).<br>
     - [Databricks Linked Services](02-azure-data-factory.md#Databricks-Linked-Services).<br> 
-  - [Create Dataset](03-azure-databricks.md#Create-Dataset).<br> 
-    - [Dataset of Azure Blob Storage](03-azure-databricks.md#Dataset-of-Azure-Blob-Storage).<br>  
-    - [Dataset of Azure Data Lake Storage Gen2](03-azure-databricks.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br> 
+  - [Create Dataset](02-azure-data-factory.md#Create-Dataset).<br> 
+    - [Dataset of Azure Blob Storage](02-azure-data-factory.md#Dataset-of-Azure-Blob-Storage).<br>  
+    - [Dataset of Azure Data Lake Storage Gen2](02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br> 
   - [Extract data using Azure Data Factory.](03-azure-databricks.md).<br>
 
 ### Check that this step has been completed before START:
