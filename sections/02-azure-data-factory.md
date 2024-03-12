@@ -6,14 +6,14 @@ Think of Azure Data Factory as a moving service for your data. It can efficientl
     - [Source Linked Services](02-azure-data-factory.md#Source-Linked-Services).<br>
     - [Sink Linked Services](02-azure-data-factory.md#Sink-Linked-Services).<br>
     - [Databricks Linked Services](02-azure-data-factory.md#Databricks-Linked-Services).<br> 
-  - [Create Dataset](03-azure-databricks.md).<br>
-    - [Dataset of Azure Blob Storage](03-azure-databricks.md).<br> 
-    - [Dataset of Azure Data Lake Storage Gen2.](03-azure-databricks.md).<br>
+  - [Create Dataset](02-azure-data-factory.md#Create-Dataset).<br> 
+    - [Dataset of Azure Blob Storage](02-azure-data-factory.md#Dataset-of-Azure-Blob-Storage).<br>  
+    - [Dataset of Azure Data Lake Storage Gen2](02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br> 
   - [Extract data using Azure Data Factory.](03-azure-databricks.md).<br>
 
 ### Check that this step has been completed before START:
 - Create Account Azure subscription.
-- Create Azure Data Lake Storage Gen2.
+- Create Storage Accounts (Azure Data Lake Storage Gen2).
 
 ![0](/images/7.png)
 
@@ -56,7 +56,7 @@ To create a source linked services, follow these steps:
 
 To create a sink linked services, follow these steps:
 1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **New**.
-2. Search for the **Data source**: `Azure Blob Storage`
+2. Search for the **Data source**: `Azure Data Lake Storage Gen2`
 3. Enter name: `sink`
 4. Select **Storage account name**: `walmartazuredatabricks`
 5. Test the connection, and create the new linked service.
@@ -81,3 +81,58 @@ To create a databricks linked services, follow these steps:
 7. On **Authentication type** click **Access token**.
 8. Enter **Access token**.
 9. Select **Choose from existing clusters**: `Walmart-Cluster`
+
+## Create Dataset
+Think of it this way the dataset represents the structure of the data. This dataset acts as a **key** (or **reference**) that lets you easily find all the data you need, even though it's stored in different locations and formats. In this case, we will create datasets for the data source in ZIP format (**Azure Blob Storage**) and the data storage in CSV format (**Azure Data Lake Storage Gen2**).
+
+![0](/images/14.png)
+
+### Dataset of Azure Blob Storage
+
+![0](/images/15.png)
+
+To create a dataset of azure blob storage, follow these steps:
+1. Browse to the **Author tab** in your Azure Data Factory, and select the plus **+**, to choose **Dataset**.
+2. Search for the **Data source**: `Azure Blob Storage`
+
+![0](/images/16.png)
+
+3. Choose **the format**: `DelimitedText`
+4. Enter name: `walmart_data`
+5. Select **Linked service**: `source`
+
+![0](/images/17.png)
+
+6. On **File path**, click **Browse** to the data source in **ZIP format**: `WMT_Grocery_202209.csv.zip`
+7. On **Import schema**, click **None**
+8. Click **OK**.
+
+![0](/images/18.png)
+
+9. On the **Connection tab**, Select **Compression type**: `ZipDeflate(.zip)`
+10. Select **Compression level**: `Optimal`
+    
+### Dataset of Azure Data Lake Storage Gen2
+
+![0](/images/19.png)
+
+To create a dataset of azure data lake storage gen2, follow these steps:
+1. Browse to the **Author tab** in your Azure Data Factory, and select the plus **+**, to choose **Dataset**.
+2. Search for the **Data source**: `Azure Data Lake Storage Gen2`
+3. Choose **the format**: `DelimitedText`
+4. Enter name: `walmart_gen2`
+5. Select **Linked service**: `sink`
+6. Enter **File path**: `WMT_Grocery_202209.csv`
+7. On **Import schema**, click **None**
+8. Click **OK**.
+
+![0](/images/20.png)
+
+9. On the **Connection tab**, enter the file path **Add new container** as: `raw`<br>
+You should have the file path similar to this example. <br>
+**File path:** `raw/<no-directory>/WMT_Grocery_202209.csv` <br>
+10. Select **Compression type**: `Comma(,)`
+11. Select **Compression level**: `Optimal`
+12. Click **Publishing**.
+
+For more information about create datasets.[Here](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory)
