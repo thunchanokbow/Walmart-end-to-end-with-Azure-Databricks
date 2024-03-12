@@ -14,9 +14,9 @@ The data is extracted in batches using Azure Data Factory and transformed using 
   - [Sink Linked Services](sections/02-azure-data-factory.md#Sink-Linked-Services).<br>
   - [Databricks Linked Services](sections/02-azure-data-factory.md#Databricks-Linked-Services).<br> 
 
-- [Create Dataset](sections/03-azure-databricks.md).<br>
-  - [Dataset of Azure Blob Storage](sections/03-azure-databricks.md).<br>
-  - [Dataset of Azure Data Lake Storage Gen2](sections/03-azure-databricks.md).<br>
+- [Create Dataset](sections/02-azure-data-factory.md#Create-Dataset).<br>
+  - [Dataset of Azure Blob Storage](sections/02-azure-data-factory.md#Dataset-of-Azure-Blob-Storage).<br>
+  - [Dataset of Azure Data Lake Storage Gen2](sections/02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br>
 - [Extract data using Azure Data Factory](sections/03-azure-databricks.md).<br>
 
 [Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
