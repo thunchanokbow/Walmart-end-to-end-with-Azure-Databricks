@@ -17,7 +17,7 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 - [Create Dataset](sections/02-azure-data-factory.md#Create-Dataset).<br>
   - [Dataset of Azure Blob Storage](sections/02-azure-data-factory.md#Dataset-of-Azure-Blob-Storage).<br>
   - [Dataset of Azure Data Lake Storage Gen2](sections/02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br>
-- [Extract data using Azure Data Factory](sections/03-azure-databricks.md).<br>
+- [Extract data using Azure Data Factory](sections/02-azure-data-factory.md#Extract-data-using-Azure-Data-Factory).<br> 
 
 [Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
 - [Create Cluster](sections/03-azure-databricks.md).<br>
