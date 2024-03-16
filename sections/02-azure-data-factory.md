@@ -41,7 +41,7 @@ In Linked Services, you can easily **connect** different resources to the **Azur
 
 To create a source linked services, follow these steps:
 1. Select the data factory in the **Resource group** to view it. Then select the **Launch Studio** button to continue.
-2. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **New**.
+2. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **+ New**.
 3. Search for the **Data source**: `Azure Blob Storage`
 
 ![0](/images/11.png)
@@ -55,7 +55,7 @@ To create a source linked services, follow these steps:
 ![0](/images/12.png)
 
 To create a sink linked services, follow these steps:
-1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **New**.
+1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **+ New**.
 2. Search for the **Data source**: `Azure Data Lake Storage Gen2`
 3. Enter name: `sink`
 4. Select **Storage account name**: `walmartazuredatabricks`
@@ -72,7 +72,7 @@ For more information about create an linked services.[Here](https://learn.micros
 - Databricks Access Tokens.
 
 To create a databricks linked services, follow these steps:
-1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **New**.
+1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **+ New**.
 2. Search for the **Data source**: `Azure Databricks` 
 3. Enter name: `databricks_walmart`
 4. Select **Subscription**.
@@ -104,7 +104,7 @@ To create a dataset of azure blob storage, follow these steps:
 ![0](/images/17.png)
 
 6. On **File path**, click **Browse** to the data source in **ZIP format**: `WMT_Grocery_202209.csv.zip`
-7. On **Import schema**, click **None**
+7. On **Import schema**, click **None**.
 8. Click **OK**.
 
 ![0](/images/18.png)
@@ -123,7 +123,7 @@ To create a dataset of azure data lake storage gen2, follow these steps:
 4. Enter name: `walmart_gen2`
 5. Select **Linked service**: `sink`
 6. Enter **File path**: `WMT_Grocery_202209.csv`
-7. On **Import schema**, click **None**
+7. On **Import schema**, click **None**.
 8. Click **OK**.
 
 ![0](/images/20.png)
@@ -136,3 +136,22 @@ You should have the file path similar to this example. <br>
 12. Click **Publishing**.
 
 For more information about create datasets.[Here](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory)
+
+## Extract data using Azure Data Factory
+Extract data using the copy activity **(Azure Data Factory)**. The **Copy activity** lets you move files directly between different storage locations, like copying documents from one folder to another on your computer. It's a quick way to transfer information without needing any special tools.<br>
+
+![0](/images/N.png)
+
+To create a dataset of azure data lake storage gen2, follow these steps:
+1. Browse to the **Author tab** in your Azure Data Factory, and select the **pipelines**, to choose **New Pipeline**.
+2. On the **Properties**, enter **Name**: `data-integration`
+3. On the **General** tab, enter **Name**: `copy_walmart_data`
+4. On the **Source** tab, choose **Source dataset**: `walmart_data`
+5. Select **File path in dataset**.
+6. On the **Sink** tab, choose **Sink dataset**:`walmart_gen2`
+7. Click **Validate** then **Debug**.
+8. To check status, click **Output** tab. 
+
+![0](/images/N.png)
+
+For more information about copy data using copy activity.[Here](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-overview)
