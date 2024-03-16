@@ -138,20 +138,27 @@ You should have the file path similar to this example. <br>
 For more information about create datasets.[Here](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory)
 
 ## Extract data using Azure Data Factory
+
+![0](/images/21.png)
+
 Extract data using the copy activity **(Azure Data Factory)**. The **Copy activity** lets you move files directly between different storage locations, like copying documents from one folder to another on your computer. It's a quick way to transfer information without needing any special tools.<br>
 
-![0](/images/N.png)
+![0](/images/22.png)
 
-To create a dataset of azure data lake storage gen2, follow these steps:
+To extract data using azure data factory, follow these steps:
 1. Browse to the **Author tab** in your Azure Data Factory, and select the **pipelines**, to choose **New Pipeline**.
 2. On the **Properties**, enter **Name**: `data-integration`
-3. On the **General** tab, enter **Name**: `copy_walmart_data`
-4. On the **Source** tab, choose **Source dataset**: `walmart_data`
-5. Select **File path in dataset**.
-6. On the **Sink** tab, choose **Sink dataset**:`walmart_gen2`
-7. Click **Validate** then **Debug**.
-8. To check status, click **Output** tab. 
+3. On the **General tab**, enter **Name**: `copy_walmart_data`
 
-![0](/images/N.png)
+![0](/images/23.png)
+
+4. On the **Source tab**, choose **Source dataset**: `walmart_data`
+5. Select **File path in dataset**.
+6. On the **Sink tab**, choose **Sink dataset**:`walmart_gen2`
+
+![0](/images/24.png)
+
+7. Click **Validate** then **Debug**.
+8. To check status, click **Output tab**. 
 
 For more information about copy data using copy activity.[Here](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-overview)
