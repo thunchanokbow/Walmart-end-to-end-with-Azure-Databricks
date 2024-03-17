@@ -1,10 +1,10 @@
 # Azure Databricks
 Think of Azure Databricks as a powerful toolbox for working with all your data. It lets you **easily collect, organize, analyze, and share your information** to gain valuable insights. **In our case**, we will use this to **transform data** to find a list of **top categories** for September 2022 for promotion in more visible locations on their website or application, and also identify **top-selling product names within those categories** to contact suppliers for reordering and pricing discussions.
 
-- [Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
-- [Create Cluster](sections/03-azure-databricks.md#Create-Cluster).<br>  
-- [Mounting Data Lake Storage](sections/04-synapse-analytics.md).<br>  
-- [Using Databricks to transform data](sections/04-synapse-analytics.md).<br>
+- [Create Azure Databricks Services](03-azure-databricks.md).<br>
+- [Create Cluster](03-azure-databricks.md#Create-Cluster).<br>  
+- [Mounting Data Lake Storage](04-synapse-analytics.md).<br>  
+- [Using Databricks to transform data](04-synapse-analytics.md).<br>
 
 
 ### Check that this step has been completed before START:
