@@ -47,12 +47,13 @@ For more information about create cluster.[Here](https://learn.microsoft.com/en-
 
 ## Mounting Data Lake Storage
 
-![0](/images/N.png)
+![0](/images/28.png)
 
-To **connect** to external storage (**Azure Data Lake Storage Gen2**) in **Databricks** using a Python script, you'll need to **create a registered application in Microsoft Entra ID** with  
-a unique identifier (**Application ID**), another identifier for your organization (**Directory ID**), and a secret key (**Service Credential**) This information is created in **Microsoft Azure**. Finally, you'll **grant access** to the storage (**Azure Data Lake Storage Gen2**) for this application **Access Control (IAM)**.
+To **connect** to external storage (**Azure Data Lake Storage Gen2**) in **Databricks** using a Python script, you'll need to **create a registered application in Microsoft Entra ID** with a unique identifier (**Application ID**), another identifier for your organization (**Directory ID**), and a secret key (**Service Credential**) This information is created in **Microsoft Azure**. Finally, you'll **grant access** to the storage (**Azure Data Lake Storage Gen2**) for this application **Access Control (IAM)**.
 
 ### Create App Registrations
+
+![0](/images/29.png)
 
 To create an app registrations, follow these steps:
 1. Search for the **Microsoft Entra ID** in Microsoft Azure.
@@ -61,9 +62,9 @@ To create an app registrations, follow these steps:
 4. Click **Register**.
 5. On the Walmart-App page, Copy **Application (Client) ID** and **Directory (Client) ID**.
 
-![0](/images/N.png)
-
 ### Add Cretificates & secrets
+
+![0](/images/30.png)
 
 To add cretificates and secrets, follow these steps:
 1. On the App Registrations page, select **Walmart-App**.
@@ -71,11 +72,27 @@ To add cretificates and secrets, follow these steps:
 3. Click **+ New client secret**.
 4. Enter **Description**: `secret_created`
 5. Select **Expires**: `180 days (6 months)`
+
+![0](/images/31.png)
+
 6. Click **Add**.
 7. On the **Client Secrets** tab, Copy **Value**. 
-      
 
 ### Grant Access to the storage ( Access Control (IAM) )
+
+![0](/images/33.png)
+
 To grant access to the storage, follow these steps:
-1. Search for the **Azure Data Lake Storage Gen2** in Microsoft Azure.
-2. 
+1. Search for the **Storage Account** in Microsoft Azure.
+2. Select **walmartazuredatabricks**.
+3. Browse to the **Access Control (IAM)**, click **Add role assignment** button to continue.
+
+![0](/images/34.png)
+
+4. On **Job function role** tab, search for the **container**: `Storage Blob Data Contrib...`, then **Next**.
+5. On the **Members** tab, click **+ Select members**.
+
+![0](/images/35.png)
+
+6. On the **Select Members** page, search for `Walmart-App`, click **Select**
+7. Click **Review + assign** then **Create**.   
