@@ -21,16 +21,16 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 
 [Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
 - [Create Cluster](sections/03-azure-databricks.md).<br>
-- [Mounting Data Lake Storage](sections/03-azure-databricks.md).<br>
-- [Using Databricks to transform data](sections/03-azure-databricks.md).<br>
+- [Mounting Data Lake Storage](sections/04-synapse-analytics.md).<br>
+- [Using Databricks to transform data](sections/04-synapse-analytics.md).<br>
 
 
-[Building Pipelines Using Azure Data Factory](sections/03-azure-databricks.md).<br>
-[Create Synapse Analytics workspace](sections/03-azure-databricks.md).<br>
-- [Create Lake database](sections/03-azure-databricks.md).<br>
-- [Create Table from data lake](sections/03-azure-databricks.md).<br>
-- [Load data into Azure Synapse Analytics](sections/03-azure-databricks.md).<br>
+[Building Pipelines Using Azure Data Factory](sections/04-synapse-analytics.md).<br>
+[Create Synapse Analytics workspace](sections/04-synapse-analytics.md).<br>
+- [Create Lake database](sections/04-synapse-analytics.md).<br>
+- [Create Table from data lake](sections/04-synapse-analytics.md).<br>
+- [Load data into Azure Synapse Analytics](sections/04-synapse-analytics.md).<br>
 
-[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/03-azure-databricks.md).<br>
-- [Connect to a data source in Power BI](sections/03-azure-databricks.md).<br>
-- [Creating Data visualizations](sections/03-azure-databricks.md).<br>
+[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/04-synapse-analytics.md).<br>
+- [Connect to a data source in Power BI](sections/04-synapse-analytics.md).<br>
+- [Creating Data visualizations](sections/04-synapse-analytics.md).<br>
