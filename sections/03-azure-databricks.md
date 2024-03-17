@@ -44,3 +44,38 @@ To create cluster, follow these steps:
 9. On **Terminate after**, enter: `20`.
 
 For more information about create cluster.[Here](https://learn.microsoft.com/en-us/azure/databricks/compute/configure)
+
+## Mounting Data Lake Storage
+
+![0](/images/N.png)
+
+To **connect** to external storage (**Azure Data Lake Storage Gen2**) in **Databricks** using a Python script, you'll need to **create a registered application in Microsoft Entra ID** with  
+a unique identifier (**Application ID**), another identifier for your organization (**Directory ID**), and a secret key (**Service Credential**) This information is created in **Microsoft Azure**. Finally, you'll **grant access** to the storage (**Azure Data Lake Storage Gen2**) for this application **Access Control (IAM)**.
+
+### Create App Registrations
+
+To create an app registrations, follow these steps:
+1. Search for the **Microsoft Entra ID** in Microsoft Azure.
+2. Browse to the **App Registrations**, then click **+ Add**.
+3. Enter **Name**: `Walmart-App`
+4. Click **Register**.
+5. On the Walmart-App page, Copy **Application (Client) ID** and **Directory (Client) ID**.
+
+![0](/images/N.png)
+
+### Add Cretificates & secrets
+
+To add cretificates and secrets, follow these steps:
+1. On the App Registrations page, select **Walmart-App**.
+2. Browse to the **Cretificates & secrets**.
+3. Click **+ New client secret**.
+4. Enter **Description**: `secret_created`
+5. Select **Expires**: `180 days (6 months)`
+6. Click **Add**.
+7. On the **Client Secrets** tab, Copy **Value**. 
+      
+
+### Grant Access to the storage ( Access Control (IAM) )
+To grant access to the storage, follow these steps:
+1. Search for the **Azure Data Lake Storage Gen2** in Microsoft Azure.
+2. 
