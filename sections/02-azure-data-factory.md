@@ -78,7 +78,7 @@ To create a databricks linked services, follow these steps:
 4. Select **Subscription**.
 5. Select **Databricks workspace**: `walmart_sep_2022`
 6. **Select Cluster**, click **Existing interactive cluster**.
-7. On **Authentication type** click **Access token**.
+7. On **Authentication type** click **Access token**. [Here](03-azure-databricks.md#Generate-Access-tokens)
 8. Enter **Access token**.
 9. Select **Choose from existing clusters**: `Walmart-Cluster`
 
