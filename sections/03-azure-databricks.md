@@ -3,16 +3,17 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
 
 - [Create Azure Databricks Services](03-azure-databricks.md).<br>
 - [Create Cluster](03-azure-databricks.md#Create-Cluster).<br>  
-- [Mounting Data Lake Storage](04-synapse-analytics.md).<br>  
-- [Using Databricks to transform data](04-synapse-analytics.md).<br>
-
+- [Mounting Data Lake Storage](03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>  
+- [Using Databricks to transform data](03-azure-databricks.md#Using-Databricks-to-transform-data).<br> 
+- [Run Databricks Notebook using Azure Data Factory](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br> 
 
 ### Check that this step has been completed before START:
-- Azure Data Lake Stoarge Gen2 Containers.
+- Azure Data Lake Stoarge Gen2 Containers. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)
   1. raw.
   2. transformation. 
-- PySpark script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/Walmart_Sep_2022.ipynb)
 - Mounting storage Python script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py)
+- PySpark script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/Walmart_Sep_2022.ipynb)
+- Databricks Linked Services. [Here](02-azure-data-factory.md#Databricks-Linked-Services)
 
 ## Create Azure Databricks Service
 
@@ -148,7 +149,8 @@ dbutils.fs.mount(
 
 ![0](/images/36.png)
  
-For more information about mounting cloud object storage on azure databricks.[Here](https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts)
+For more information about mounting cloud object storage on azure databricks.[Here](https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts)<br>
+
 To create new folders in databricks, follow these steps:
 1. On the **Azure Databricks Service page**, select **walmart_sep_2022**.
 2. Click **Launch Workspace** button to continue.
@@ -161,3 +163,51 @@ To create new folders in databricks, follow these steps:
 6. Click **mount torage.py**.
 7. Browse to **Databricks Cluster**, then select **Walmart-Cluster**.
 8. Click **Run-All**. 
+
+## Using Databricks to transform data
+
+![0](/images/38.png)
+
+To using databricks to transform data, follow these steps:
+1. Browse to **Workspace** in the Databricks, click **Add**, then select **Folder**.
+2. Enter **New folder**: `transform`
+3. **Import** file `Walmart_Sep_2022.ipynb`
+4. Click **Walmart_Sep_2022.ipynb**.
+
+## Run Databricks Notebook using Azure Data Factory
+
+### Generate Access tokens
+
+![0](/images/40.png)
+
+To generate new access tokens on databricks, follow these steps:
+1. Browse to **User Setting** in the Databricks.
+2. On the **Settings** page, browse to **Developer**.
+3. On the **Access tokens** tab, click **Generate new token**.
+4. Click copy **Your Token**.
+
+![0](/images/39.png)
+
+### Run Databricks Notebook Activity
+
+![0](/images/42.png)
+
+To run databricks notebook activity, follow these steps:
+1. Browse to the **Author tab** in your Azure Data Factory, and select the **pipelines**, to choose **New Pipeline**.
+2. On the **Activities** tab, select **Databricks**, drag the **Notebook** activity.
+3. In **Properties**, enter **Name**: `databricks_transform_walmart`
+
+![0](/images/41.png)
+
+4. On the **General tab**, enter **Name**: `databricks_walmart_transform`
+5. In the **Azure Databricks**, set up the **Datacbricks Linked Services**. [Here](02-azure-data-factory.md#Databricks-Linked-Services)
+6. On the **Authentication type**, select **Access token**, then enter **Your Token**.
+
+![0](/images/13.png)
+
+7. Click **Create**.
+8. On the **Settings** tab, click **Browse** to **PySpark script**: `Walmart_Sep_2022.ipynb`
+9. Click **Validate**, click **Trigger Now**.
+10. To check status, click **Details Output**.
+
+For more information about run databricks notebook activity.[Here](https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-databricks-notebook)
