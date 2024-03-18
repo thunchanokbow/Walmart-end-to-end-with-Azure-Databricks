@@ -8,9 +8,11 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
 
 
 ### Check that this step has been completed before START:
-- Azure Data Lake Stoarge Gen2.
+- Azure Data Lake Stoarge Gen2 Containers.
+  1. raw.
+  2. transformation. 
 - PySpark script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/Walmart_Sep_2022.ipynb)
-- Mounting Python script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py)
+- Mounting storage Python script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py)
 
 ## Create Azure Databricks Service
 
@@ -72,11 +74,12 @@ To add cretificates and secrets, follow these steps:
 3. Click **+ New client secret**.
 4. Enter **Description**: `secret_created`
 5. Select **Expires**: `180 days (6 months)`
+6. Click **Add**.
+7. On the **Client Secrets** tab, Copy **Value**. 
 
 ![0](/images/31.png)
 
-6. Click **Add**.
-7. On the **Client Secrets** tab, Copy **Value**. 
+For more information about register an application.[Here](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app)
 
 ### Grant Access to the storage ( Access Control (IAM) )
 
@@ -96,3 +99,51 @@ To grant access to the storage, follow these steps:
 
 6. On the **Select Members** page, search for `Walmart-App`, click **Select**
 7. Click **Review + assign** then **Create**.   
+
+For more information about assign azure roles.[Here](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal?tabs=delegate-condition)
+
+
+### Mounting storage
+We need to create a folder to store the mount storage [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py). Then, we can connect Databricks to Azure Data Lake Storage Gen2 by running the `mount storage.py` script. <br>
+Mount the following Azure Data Lake Storage Gen2 containers. <br>
+1. raw
+2. transformation
+
+
+Set up the configs. Make sure you have the following information: 
+- Application ID.
+- Directory ID.
+- Service Credential.
+
+```
+configs = {"fs.azure.account.auth.type": "OAuth",
+           "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
+           "fs.azure.account.oauth2.client.id": "<application-id>"
+           "fs.azure.account.oauth2.client.secret": "<service-credential>"
+           "fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/<directory-id>/oauth2/token"}  
+
+```
+
+Mount the raw container. Please update the following:
+- raw-container.
+- storage-account-name.
+
+```
+dbutils.fs.mount(
+  source = "abfss://<raw-container>@<storage-account-name>.dfs.core.windows.net/", 
+  mount_point = "/mnt/<storage-account-name>/<raw-container>", 
+  extra_configs = configs)
+```
+
+Mount the transformation container. Please update the following:
+- transformation-container.
+- storage-account-name.
+
+```
+dbutils.fs.mount(
+  source = "abfss://<transformation-container>@<storage-account-name>.dfs.core.windows.net/", 
+  mount_point = "/mnt/<storage-account-name>/<transformation-container>", 
+  extra_configs = configs)
+```
+ 
+For more information about mounting cloud object storage on azure databricks.[Here](https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts)
