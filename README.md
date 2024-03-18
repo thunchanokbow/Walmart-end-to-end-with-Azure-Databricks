@@ -20,12 +20,11 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 - [Extract data using Azure Data Factory](sections/02-azure-data-factory.md#Extract-data-using-Azure-Data-Factory).<br> 
 
 [Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
-- [Create Cluster](sections/03-azure-databricks.md).<br>
-- [Mounting Data Lake Storage](sections/04-synapse-analytics.md).<br>
-- [Using Databricks to transform data](sections/04-synapse-analytics.md).<br>
+- [Create Cluster](sections/03-azure-databricks.md#Create-Cluster).<br>
+- [Mounting Data Lake Storage](sections/03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>
+- [Using Databricks to transform data](sections/03-azure-databricks.md#Using-Databricks-to-transform-data).<br>
+- [Run Databricks Notebook using Azure Data Factory](sections/03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br> 
 
-
-[Building Pipelines Using Azure Data Factory](sections/04-synapse-analytics.md).<br>
 [Create Synapse Analytics workspace](sections/04-synapse-analytics.md).<br>
 - [Create Lake database](sections/04-synapse-analytics.md).<br>
 - [Create Table from data lake](sections/04-synapse-analytics.md).<br>
