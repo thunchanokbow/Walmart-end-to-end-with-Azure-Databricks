@@ -145,5 +145,19 @@ dbutils.fs.mount(
   mount_point = "/mnt/<storage-account-name>/<transformation-container>", 
   extra_configs = configs)
 ```
+
+![0](/images/36.png)
  
 For more information about mounting cloud object storage on azure databricks.[Here](https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts)
+To create new folders in databricks, follow these steps:
+1. On the **Azure Databricks Service page**, select **walmart_sep_2022**.
+2. Click **Launch Workspace** button to continue.
+3. Browse to **Workspace** in the Databricks, click **Add**, then select **Folder**.
+4. Enter **New folder**: `set-up`
+5. **Import** file `mount storage.py`
+
+![0](/images/37.png)
+
+6. Click **mount torage.py**.
+7. Browse to **Databricks Cluster**, then select **Walmart-Cluster**.
+8. Click **Run-All**. 
