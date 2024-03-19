@@ -69,7 +69,7 @@ For more information about create an linked services.[Here](https://learn.micros
 - Create Azure Databricks Services.
 - Create Databricks Workspaces.
 - Create Clusters.
-- Databricks Access Tokens.
+- Databricks Access Tokens. [Here](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory)
 
 To create a databricks linked services, follow these steps:
 1. Browse to the **Manage tab** in your Azure Data Factory, select **Linked Services**, then click **+ New**.
