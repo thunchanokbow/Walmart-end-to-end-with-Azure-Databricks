@@ -5,8 +5,10 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
 - [Create Cluster](03-azure-databricks.md#Create-Cluster).<br>  
 - [Mounting Data Lake Storage](03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>  
 - [Using Databricks to transform data](03-azure-databricks.md#Using-Databricks-to-transform-data).<br> 
-- [Run Databricks Notebook using Azure Data Factory](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br> 
-
+- [Run Databricks Notebook using Azure Data Factory](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br>
+  - [Generate Access tokens](03-azure-databricks.md#Generate-Access-tokens).<br>  
+  - [Run Databricks Notebook Activity](03-azure-databricks.md#Run-Databricks-Notebook-Activity).
+    
 ### Check that this step has been completed before START:
 - Azure Data Lake Stoarge Gen2 Containers. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)
   1. raw.
