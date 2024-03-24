@@ -5,8 +5,10 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
 - [Create Cluster](03-azure-databricks.md#Create-Cluster).<br>  
 - [Mounting Data Lake Storage](03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>  
 - [Using Databricks to transform data](03-azure-databricks.md#Using-Databricks-to-transform-data).<br> 
-- [Run Databricks Notebook using Azure Data Factory](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br> 
-
+- [Run Databricks Notebook using Azure Data Factory](03-azure-databricks.md#Run-Databricks-Notebook-using-Azure-Data-Factory).<br>
+  - [Generate Access tokens](03-azure-databricks.md#Generate-Access-tokens).<br>  
+  - [Run Databricks Notebook Activity](03-azure-databricks.md#Run-Databricks-Notebook-Activity).
+    
 ### Check that this step has been completed before START:
 - Azure Data Lake Stoarge Gen2 Containers. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)
   1. raw.
@@ -105,16 +107,19 @@ For more information about assign azure roles.[Here](https://learn.microsoft.com
 
 
 ### Mounting storage
-We need to create a folder to store the mount storage [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py). Then, we can connect Databricks to Azure Data Lake Storage Gen2 by running the `mount storage.py` script. <br>
+We need to create a folder to store the mount storage [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/mount_storage.py). Then, we can **connect Databricks to Azure Data Lake Storage Gen2** by running the `mount storage.py` script. <br>
+
+![0](/images/43.png)
+
 Mount the following Azure Data Lake Storage Gen2 containers. <br>
-1. raw
-2. transformation
+1. **raw**
+2. **transformation**
 
 
 Set up the configs. Make sure you have the following information: 
-- Application ID.
-- Directory ID.
-- Service Credential.
+- **Application ID**.
+- **Directory ID**.
+- **Service Credential**.
 
 ```
 configs = {"fs.azure.account.auth.type": "OAuth",
@@ -126,8 +131,8 @@ configs = {"fs.azure.account.auth.type": "OAuth",
 ```
 
 Mount the raw container. Please update the following:
-- raw-container.
-- storage-account-name.
+- **raw-container**.
+- **storage-account-name**.
 
 ```
 dbutils.fs.mount(
@@ -137,8 +142,8 @@ dbutils.fs.mount(
 ```
 
 Mount the transformation container. Please update the following:
-- transformation-container.
-- storage-account-name.
+- **transformation-container**.
+- **storage-account-name**.
 
 ```
 dbutils.fs.mount(
@@ -147,10 +152,10 @@ dbutils.fs.mount(
   extra_configs = configs)
 ```
 
-![0](/images/36.png)
- 
 For more information about mounting cloud object storage on azure databricks.[Here](https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts)<br>
 
+![0](/images/36.png)
+ 
 To create new folders in databricks, follow these steps:
 1. On the **Azure Databricks Service page**, select **walmart_sep_2022**.
 2. Click **Launch Workspace** button to continue.
@@ -160,11 +165,12 @@ To create new folders in databricks, follow these steps:
 
 ![0](/images/37.png)
 
-6. Click **mount torage.py**.
+6. Click **mount storage.py**.
 7. Browse to **Databricks Cluster**, then select **Walmart-Cluster**.
 8. Click **Run-All**. 
 
 ## Using Databricks to transform data
+First, we need to create a folder to store the pyspark script [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/Walmart_Sep_2022.ipynb). Than, we can run the Databricks notebook to **transform data** by running the `Walmart_Sep_2022.ipynb` and gain the insights.
 
 ![0](/images/38.png)
 
@@ -177,6 +183,7 @@ To using databricks to transform data, follow these steps:
 ## Run Databricks Notebook using Azure Data Factory
 
 ### Generate Access tokens
+Access tokens act as **secure keys** that allow Azure Data Factory to **connect with Databricks Notebooks**. This connection makes it possible to build efficient pipelines that handle large amounts of data, all without needing to show usernames and passwords, keeping everything safe.
 
 ![0](/images/40.png)
 
