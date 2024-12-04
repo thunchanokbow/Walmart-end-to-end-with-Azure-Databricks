@@ -4,7 +4,9 @@ Think of Synapse Analytics is a powerful **tool that helps businesses analyze la
 - [Create Synapse Analytics workspace](sections/04-synapse-analytics.md).<br>
 - [Create Lake database](sections/04-synapse-analytics.md).<br>
 - [Create Table from data lake](sections/04-synapse-analytics.md).<br>
-- [Load data into Azure Synapse Analytics](sections/04-synapse-analytics.md).<br>
+- [Query data on Azure Synapse Analytics](sections/04-synapse-analytics.md).<br>
+
+### Check that this step has been completed before START:
 
 ## Create Synapse Analytics workspace
 
@@ -24,3 +26,12 @@ To create a synapse analytics workspace, follow these steps:
 For more information about create a synapse analytics workspace.[Here](https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace)
 
 ![0](/images/71.png)
+
+## Create Lake database
+
+To create lake database, follow these steps:
+1. On the Azure Synapse Analytics **Home page**, select the **Data** tab on the left.
+2. Click the **+ button** and select **Lake database**.
+3. The database designer has **Properties** on the right that need to be configured.
+- Select **Name**:`WalmartProductDB`
+- Select **Linked service**:``
