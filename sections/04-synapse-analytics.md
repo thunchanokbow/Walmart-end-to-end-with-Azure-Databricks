@@ -67,5 +67,8 @@ To query data on Azure Synapse Analytics, follow these steps:
 1. On the **Home page**, select the **Data** tab on the left.
 2. Under **Lake database**, select **top_category**, then click **[...]** button.
 3. Select **New SQL script**, then click **Select TOP 100 rows**.
-4. On the top right, select **Use database**:`WalmartProductsDB`.
-5. Run these queries below to gain insights into Walmart Products September 2022.
+4. Select **Use database**:`WalmartProductsDB` from the top-right before running the query.
+
+![0](/images/77.png)
+![0](/images/78.png)
+![0](/images/79.png)
