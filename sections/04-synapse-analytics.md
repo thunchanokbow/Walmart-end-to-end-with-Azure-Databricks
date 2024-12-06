@@ -1,10 +1,10 @@
 # Synapse Analytics
 Think of Synapse Analytics is a powerful **tool that helps businesses analyze large amounts of data** quickly and efficiently. It combines the best features of different technologies to provide valuable insights that can drive decision-making.
 
-- [Create Synapse Analytics workspace](sections/04-synapse-analytics.md).<br>
-- [Create Lake database](sections/04-synapse-analytics.md#Create-Lake-database).<br>
-- [Create Table from data lake](sections/04-synapse-analytics.md#Create-Table-from-data-lake).<br>
-- [Query data on Azure Synapse Analytics](sections/04-synapse-analytics.md#Query-data-on-Azure-Synapse-Analytics).<br>
+- [Create Synapse Analytics workspace](04-synapse-analytics.md#Create-Synapse-Analytics-workspace).<br>
+- [Create Lake database](04-synapse-analytics.md#Create-Lake-database).<br>
+- [Create Table from data lake](04-synapse-analytics.md#Create-Table-from-data-lake).<br>
+- [Query data on Azure Synapse Analytics](04-synapse-analytics.md#Query-data-on-Azure-Synapse-Analytics).<br>
 
 ### Check that this step has been completed before START:
 - Azure Data Lake Stoarge Gen2 with `transformation container`. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)  
