@@ -61,3 +61,14 @@ For more information about create table from data lake.[Here](https://learn.micr
 ![0](/images/75.png)
 ![0](/images/76.png)
 
+## Query data on Azure Synapse Analytics
+
+To query data on Azure Synapse Analytics, follow these steps:
+1. On the **Home page**, select the **Data** tab on the left.
+2. Under **Lake database**, select **top_category**, then click **[...]** button.
+3. Select **New SQL script**, then click **Select TOP 100 rows**.
+4. Select **Use database**:`WalmartProductsDB` from the top-right before running the query.
+
+![0](/images/77.png)
+![0](/images/78.png)
+![0](/images/79.png)
