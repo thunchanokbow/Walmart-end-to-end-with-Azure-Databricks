@@ -9,7 +9,7 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
   - [Generate Access tokens](03-azure-databricks.md#Generate-Access-tokens).<br>  
   - [Run Databricks Notebook Activity](03-azure-databricks.md#Run-Databricks-Notebook-Activity).
     
-### Check that this step has been completed before START:
+### Check that this step has been completed before START
 - Azure Data Lake Stoarge Gen2 Containers. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)
   1. raw.
   2. transformation. 
