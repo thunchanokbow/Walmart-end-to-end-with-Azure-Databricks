@@ -11,7 +11,7 @@ Think of Azure Data Factory as a moving service for your data. It can efficientl
     - [Dataset of Azure Data Lake Storage Gen2](02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br> 
   - [Extract data using Azure Data Factory.](02-azure-data-factory.md#Extract-data-using-Azure-Data-Factory).<br> 
 
-### Check that this step has been completed before START:
+### Check that this step has been completed before START
 - Create Account Azure subscription.
 - Create Storage Accounts (Azure Data Lake Storage Gen2).
 
