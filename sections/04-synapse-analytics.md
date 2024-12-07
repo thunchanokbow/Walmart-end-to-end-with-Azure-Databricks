@@ -1,5 +1,5 @@
 # Synapse Analytics
-Think of Synapse Analytics is a powerful **tool that helps businesses analyze large amounts of data** quickly and efficiently. It combines the best features of different technologies to provide valuable insights that can drive decision-making.
+Think of Synapse Analytics is a powerful **analytics service that enables you to bring together data integration, warehousing, and big data analytics.** It combines the best features of different technologies to provide valuable insights that can drive decision-making.
 
 - [Create Synapse Analytics workspace](04-synapse-analytics.md#Create-Synapse-Analytics-workspace).<br>
 - [Create Lake database](04-synapse-analytics.md#Create-Lake-database).<br>
