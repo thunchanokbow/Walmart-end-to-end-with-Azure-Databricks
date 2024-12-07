@@ -22,4 +22,11 @@ To connect to a data source in Power BI, follow these steps:
 
 For more information about connect to a data source in Power BI. [Here](https://github.com/thunchanokbow/Real-time-data-in-Power-BI/blob/main/sections/04-Pulling-data-to-Power-BI.md)
 
-## Coming Soon
+## Creating Data visualizations
+
+- Businesses Requirements
+  1. The Marketing team needs a list of top categories in the month of September 2022. So that they can promote by placing them in more visible locations and on the website or application.
+  2. The Product team requires a list of top-selling product names within the top categories. So that they can contact the suppliers to order more products and discuss pricing options.
+
+![0](/images/80.png)
+![0](/images/81.png)
