@@ -6,7 +6,7 @@ Think of Synapse Analytics is a powerful **analytics service that enables you to
 - [Create Table from data lake](04-synapse-analytics.md#Create-Table-from-data-lake).<br>
 - [Query data on Azure Synapse Analytics](04-synapse-analytics.md#Query-data-on-Azure-Synapse-Analytics).<br>
 
-### Check that this step has been completed before START:
+### Check that this step has been completed before START
 - Azure Data Lake Stoarge Gen2 with `transformation container`. [Here](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2)  
   1. product_names_count
   2. top_category 
