@@ -1,7 +1,7 @@
 # Azure Data Factory
 Think of Azure Data Factory as a moving service for your data. It can efficiently grab information from different resources, including a data lake. In our case, we will use this tool to extract data from a data lake in **ZIP format** and store it in an Azure Data Lake Storage Gen2 container in **CSV format**. Then, we can use a tool to transform the information into a format that is easier to analyze.
 
-- [Create Azure Data Factory](02-azure-data-factory.md).<br> 
+- [Create Azure Data Factory](02-azure-data-factory.md#Create-Azure-Data-Factory).<br> 
   - [Create Linked Services](02-azure-data-factory.md#Create-Linked-Services).<br>
     - [Source Linked Services](02-azure-data-factory.md#Source-Linked-Services).<br>
     - [Sink Linked Services](02-azure-data-factory.md#Sink-Linked-Services).<br>
