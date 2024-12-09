@@ -30,6 +30,6 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 - [Create Table from data lake](sections/04-synapse-analytics.md).<br>
 - [Query data on Azure Synapse Analytics](sections/04-synapse-analytics.md).<br>
 
-[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/04-synapse-analytics.md).<br>
-- [Connect to a data source in Power BI](sections/04-synapse-analytics.md).<br>
-- [Creating Data visualizations](sections/04-synapse-analytics.md).<br>
+[Import Azure Synapse Analytics (SQL DW) Data into the Power BI](sections/05-power-bi.md#).<br>
+- [Connect to a data source in Power BI](sections/05-power-bi.md#Connect-to-a-data-source-in-Power-BI).<br>
+- [Creating Data visualizations](sections/05-power-bi.md#Creating-Data-visualizations).<br>
