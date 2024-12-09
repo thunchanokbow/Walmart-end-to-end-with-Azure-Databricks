@@ -5,10 +5,10 @@ The data is extracted in batches using Azure Data Factory and transformed using 
 
 ## Contents 
 [Create Storage Account](sections/01-storage-accounts.md).<br> 
-- [Azure Blob Storage](sections/01-storage-accounts.md).<br>
+- [Azure Blob Storage](sections/01-storage-accounts.md#Create-Azure-Blob-Storage).<br>
 - [Azure Data Lake Storage Gen2](sections/01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2).<br>
 
-[Create Azure Data Factory](sections/02-azure-data-factory.md).<br>
+[Create Azure Data Factory](sections/02-azure-data-factory.md#Create-Azure-Data-Factory).<br>
 - [Create Linked Services](sections/02-azure-data-factory.md#Create-Linked-Services).<br>
   - [Source Linked Services](sections/02-azure-data-factory.md#Source-Linked-Services).<br>
   - [Sink Linked Services](sections/02-azure-data-factory.md#Sink-Linked-Services).<br>
@@ -19,7 +19,7 @@ The data is extracted in batches using Azure Data Factory and transformed using 
   - [Dataset of Azure Data Lake Storage Gen2](sections/02-azure-data-factory.md#Dataset-of-Azure-Data-Lake-Storage-Gen2).<br>
 - [Extract data using Azure Data Factory](sections/02-azure-data-factory.md#Extract-data-using-Azure-Data-Factory).<br> 
 
-[Create Azure Databricks Services](sections/03-azure-databricks.md).<br>
+[Create Azure Databricks Services](sections/03-azure-databricks.md#Create-Azure-Databricks-Services).<br>
 - [Create Cluster](sections/03-azure-databricks.md#Create-Cluster).<br>
 - [Mounting Data Lake Storage](sections/03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>
 - [Using Databricks to transform data](sections/03-azure-databricks.md#Using-Databricks-to-transform-data).<br>

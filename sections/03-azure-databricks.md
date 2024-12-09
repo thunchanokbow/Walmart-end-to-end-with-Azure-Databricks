@@ -1,7 +1,7 @@
 # Azure Databricks
 Think of Azure Databricks as a powerful toolbox for working with all your data. It lets you **easily collect, organize, analyze, and share your information** to gain valuable insights. **In our case**, we will use this to **transform data** to find a list of **top categories** for September 2022 for promotion in more visible locations on their website or application, and also identify **top-selling product names within those categories** to contact suppliers for reordering and pricing discussions.
 
-- [Create Azure Databricks Services](03-azure-databricks.md).<br>
+- [Create Azure Databricks Services](03-azure-databricks.md#Create-Azure-Databricks-Services).<br>
 - [Create Cluster](03-azure-databricks.md#Create-Cluster).<br>  
 - [Mounting Data Lake Storage](03-azure-databricks.md#Mounting-Data-Lake-Storage).<br>  
 - [Using Databricks to transform data](03-azure-databricks.md#Using-Databricks-to-transform-data).<br> 
@@ -17,7 +17,7 @@ Think of Azure Databricks as a powerful toolbox for working with all your data. 
 - PySpark script. [file](https://github.com/thunchanokbow/Walmart-end-to-end-with-Azure-Databricks/blob/main/Walmart_Sep_2022.ipynb)
 - Databricks Linked Services. [Here](02-azure-data-factory.md#Databricks-Linked-Services)
 
-## Create Azure Databricks Service
+## Create Azure Databricks Services
 
 ![0](/images/25.png)
 
