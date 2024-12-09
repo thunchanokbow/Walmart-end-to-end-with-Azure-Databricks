@@ -1,6 +1,9 @@
 # Import Azure Synapse Analytics (SQL DW) Data into the Power BI
 Power BI is your go to smart analytics tool that will not only keep your data secure but give you insights using **data visualization**.
 
+- [Connect to a data source in Power BI](05-power-bi.md#Connect-to-a-data-source-in-Power-BI).<br>
+- [Creating Data visualizations](05-power-bi.md#Creating-Data-visualizations).<br>
+
 ### Check that this step has been completed before STAR
 - Sign in Power BI Pro or Premium.
 - Create workspaces on Power BI Service. [Here](https://github.com/thunchanokbow/Real-time-data-in-Power-BI/blob/main/sections/02-Create-A-Workspace.md)
