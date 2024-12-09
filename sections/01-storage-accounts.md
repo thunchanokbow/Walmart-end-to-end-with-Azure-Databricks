@@ -1,7 +1,7 @@
 # Azure Data Lake Storage
 Imagine a data lake as a giant digital storage container. It can hold all sorts of information your company collects, from numbers and text to even pictures and videos, all in one place. This makes it easier to find and use the information you need, without having to worry about changing it to fit a specific format. **In our case, the data will be stored in ZIP format**.
 
-- [Create Azure Blob Storage](01-storage-accounts.md#).<br>
+- [Create Azure Blob Storage](01-storage-accounts.md#Create-Azure-Blob-Storage).<br>
 - [Create Azure Data Lake Storage Gen2](01-storage-accounts.md#Create-Azure-Data-Lake-Storage-Gen2).<br>
 
 ### Check that this step has been completed before START
